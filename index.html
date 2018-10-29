@@ -29,43 +29,48 @@
         </hgroup>
     </div>
     <div class="row">
-        <div class="col-3">
+        <div class="col-1">
             <h1>One Way Trip to the Moon</h1>
-            <p>Using both one way and round trips from our data, bikers drove nearly 250000 miles. Enough milage to travel the globe nearly 10 times. 
-                Enough milage to have 110 people bike the entirity of the Tour de France. Distance was calculated by seperating one - way trips and
-                round trips. Distance in one - way trips was calculated using Google's Distance Matrix API, accumlating a total of 130690.67 miles. 
-                Using an average biking speed of 9.6 mph (taken from average biking speed in Copenhagen) and the total duration of round trips, we get 
-                9.6 mph * 11614 hours = 111492.959 miles.
+            <p>Using both one way and round trips from our data, bikers rode nearly 250000 miles. Enough milage to travel the globe
+            10 times. Enough milage to have 110 people bike the Tour de France. 
+            </p>
+            <p>Since one way trips are more accurate (don't require an estimate), this route trip category had enough milage to travel the
+            globe nearly 5 and a half times.
             </p>
         </div>
-        <div class="col-3">
+        <div class="col-1">
             <h1>$800,000 dollars Saved</h1>
             <p>Average gas prices in L.A during this time period were 3.29 (FRED data), this means that bikers saved nearly 800,000 dollars. This cost excludes
                 the amount of time saved and the cost of staying in one of the world's most notorious traffic cities.
             </p>
+            <p>
+                 If only one way trips are considered, bikers saved nearly 430,000 dollars.
+            </p>
         </div>
-        <div class="col-3">
+        <div class="col-1">
             <h1>196,100 Pounds of CO2 Emmision Reduced</h1>
             <p>Burning one gallon of gas creates 20 pounds of carbon dioxide. According to the EPA, average MPG of a car in the U.S is 24.7
-            MPG. This means that bikers prevented over 196,100 pounds of CO2 emmision. While biking  helped reduce pollution, biking more also helped users get a good workout. If we assume that biking on average consumes around 38
-        calories, clients burned 9,202,978 total calories.  </p>
+            MPG. This means that bikers prevented over 196,100 pounds of CO2 emmision. While biking helped reduce pollution, biking more
+            also helped users get a good workout. If we assume that biking on average consumes around 38 calories, clients burned 9,202,978
+            total calories.  </p>
         </div>
     </div>
     <div class="parallax p2" id="section-2">
     </div>
     <div class="row">
-        <div class="col-3">
+        <div class="col-2">
             <h1>Average Distance Traveled</h1>
-            <p>Using Google Maps API's, the total distance traveled in one-way trips amounted to over 130690.67 miles. The Distance Matrix API inputs 
-                start/end coordinates and calculates various heuristics on the path a client would take. This includes an estimate on the amount of
-                time the path requires which traffic conditions, the total distance, and directions. Since round-trips have the same start/end station, it was
-                important to understand how people bike in urban cities. A conclusive study in Copenhagen determined that the average biking speed was 9.6 mph.
-                trips. we get 9.6 mph * 11614 total hours on round trips amounts to 111492.959 miles. Note this data excludes trips where the bike was not returned.
-                In other words, the destination station ID was either 3000 or the destination longitude/latuitude was NaN. Otherwise our data would be dramatically
-                skewed to the right.
+            <p>The aggregate average distance traveled is 1.82 miles on 131472 total trips; average distance on one way
+            trips is 1.10 miles in 118690 trips; average distance on round trips is 8.7 miles in 12782 trips.
+            </p>
+            <p>To calculate the distance traveled in one way trips, the Distance Matrix API from Google Map's was used. This API estimates
+            the amount of time the path requires, the total distance, and directions. The distance traveled in one way trips
+            amounted to 130690.67 miles. Since round-trips have the same start/end station, it is important to understand how people
+            bike in urban cities. A conclusive study in Copenhagen determined that the average biking speed in a urban city was 9.6 mph.
+            From this estimate, 9.6 mph * 11614 total hours on round trips amounts to 111492.959 miles.
             </p>
         </div>
-        <div class="col-3">
+        <div class="col-2">
             <h1>Popular Start/End Stations</h1>
             <p>From looking at the bar chart of total bike usage per hour, we can see that the most frequently used hour is 6 pm. This
                 is during rush hour in L.A. It makes sense that total demand for a bike increases dramatically during that time period
@@ -75,7 +80,7 @@
                 (34.063179, -118.24588); during lunch break, it would be smart to allocate many bikes in the station (34.04681, -118.24353);
                 finnaly, during rush hour post work it would be smart to allocate many bikes to the station (34.04855, -118.25904799999999).</p>
         </div>
-        <div class="col-3">
+        <div class="col-2">
             <h1>Commuters</h1>
             <p>Considering that monthy pass holders are very likely to be commuters, we can take the average of the daily bike usage monday
             through friday for this time series.</p>
@@ -116,10 +121,12 @@
     </div>
     <footer>
         <div class="row" id="section-3">
-            <div class="col-3">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum interdum tortor ac dui malesuada, id
-                    molestie elit aliquam. Fusce laoreet nisl id tellus molestie mattis. Fusce vitae ante quis augue imperdiet
-                    rutrum a vitae purus. Etiam tincidunt enim id turpis varius, in condimentum elit.</p>
+            <div class="col-4">
+                <p>
+                About me: I am a Sophomore at Northwestern University studying Computer Science and Economics. I am currently enriching my
+                understanding of databases, software design and scalability, data structures, cloud computing, quantitative trading and/or
+                financial engineering. 
+                </p>
             </div>
         </div>
         <div class="footer-copyright">

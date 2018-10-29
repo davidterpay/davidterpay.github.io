@@ -1,7 +1,7 @@
-function EasyPeasyParallax() {
+function parallax() {
     scrollPos = $(this).scrollTop();
     $('.p1').css({
-        'background-position': '50% ' + (-scrollPos / 4) + "px"
+        'background-position': '70% ' + (-scrollPos / 4) + "px"
     });
     $('.p2').css({
         'background-position': '50% ' + (-scrollPos / 8) + "px"
@@ -16,6 +16,6 @@ function EasyPeasyParallax() {
 }
 $(document).ready(function () {
     $(window).scroll(function () {
-        EasyPeasyParallax();
+        parallax();
     });
 });
