@@ -5,7 +5,7 @@ body {
   margin: 0;
   perspective: 1px;
   transform-style: preserve-3d;
-  height: 100%;
+  height: 80%;
   overflow-x: hidden;
   font-family: "Courier New";
 }
@@ -101,13 +101,13 @@ li.active > a.nav-button {
   color: #fff;
 }
 .parallax.p2 {
-  background: url(https://github.com/davidterpay/davidterpay.github.io/blob/master/data.png?raw=true) no-repeat fixed 100% 0;
-  background-size: 700px 450px;
+  background: url(https://github.com/davidterpay/davidterpay.github.io/blob/master/aggdata.png?raw=true) no-repeat fixed 100% 0;
+  background-size: 1300px 900px;
   background-position: center;
   color: #fff;
 }
 .parallax.p3 {
-  background: url(http://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-95766.jpg) no-repeat fixed 70% 0;
+  background: url(https://11ka1d3b35pv1aah0c3m9ced-wpengine.netdna-ssl.com/wp-content/uploads/2018/08/SE_180424_5862.jpg) no-repeat fixed 70% 0;
   background-size: cover;
   color: #fff;
 }
@@ -155,7 +155,7 @@ hgroup{
 }
 .row > .col-3 {
   width: 30%;
-  height: 50%;
+  height: 80%;
   box-sizing: border-box;
   float: left;
   padding-left: 5px;
@@ -163,9 +163,9 @@ hgroup{
 }
 footer {
   width: 100%;
-  padding-top: 20px;
+  padding-top: 10px;
   display: block;
-  background-color: #ee6e73;
+  background-color: #313131;
 }
 .footer-copyright {
   font-weight: 300;
@@ -182,7 +182,7 @@ footer {
   max-width: 1280px;
 }
 footer p {
-  border-left: 3px solid #ffcdd2;
+  border-left: 3px solid #9e9e9e;
   padding-left: 15px;
   text-indent: 20px;
   color: #ececec;

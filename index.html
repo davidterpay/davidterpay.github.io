@@ -30,59 +30,89 @@
     </div>
     <div class="row">
         <div class="col-3">
-            <h1>One way trip to the moon</h1>
+            <h1>One Way Trip to the Moon</h1>
             <p>Using both one way and round trips from our data, bikers drove nearly 250000 miles. Enough milage to travel the globe nearly 10 times. 
                 Enough milage to have 110 people bike the entirity of the Tour de France. Distance was calculated by seperating one - way trips and
-                round trips. Distance in one - way trips was calculated using google's distance matrix API, accumlating a total of 130690.67 miles. 
+                round trips. Distance in one - way trips was calculated using Google's Distance Matrix API, accumlating a total of 130690.67 miles. 
                 Using an average biking speed of 9.6 mph (taken from average biking speed in Copenhagen) and the total duration of round trips, we get 
-                9.6 * 11614 = 111492.959 miles.
+                9.6 mph * 11614 hours = 111492.959 miles.
             </p>
         </div>
         <div class="col-3">
-            <h1>800,000 dollars</h1>
-            <p>Average gas prices in L.A during this time period were 3.29 (FRED data), this means that bikers saved nearly 800,000 dollars.</p>
+            <h1>$800,000 dollars Saved</h1>
+            <p>Average gas prices in L.A during this time period were 3.29 (FRED data), this means that bikers saved nearly 800,000 dollars. This cost excludes
+                the amount of time saved and the cost of staying in one of the world's most notorious traffic cities.
+            </p>
         </div>
         <div class="col-3">
-            <h1>196,100 pounds of CO2 emmision</h1>
-            <p>Buring one gallon of gas creates 20 pounds of carbon dioxide. According to the EPA, average MPG of a car in the U.S is 24.7
-            MPG. This means that bikers prevented over 196,100 pounds of CO2 emmision.</p>
+            <h1>196,100 Pounds of CO2 Emmision Reduced</h1>
+            <p>Burning one gallon of gas creates 20 pounds of carbon dioxide. According to the EPA, average MPG of a car in the U.S is 24.7
+            MPG. This means that bikers prevented over 196,100 pounds of CO2 emmision. While biking  helped reduce pollution, biking more also helped users get a good workout. If we assume that biking on average consumes around 38
+        calories, clients burned 9,202,978 total calories.  </p>
         </div>
     </div>
     <div class="parallax p2" id="section-2">
     </div>
     <div class="row">
         <div class="col-3">
-            <h1>First Section Col1</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam cursus maximus quam et dignissim. Praesent felis
-                arcu, euismod et ullamcorper ut, condimentum ut ante. Vestibulum vel libero commodo, aliquam libero eu, gravida
-                arcu. Proin scelerisque faucibus ligula quis efficitur. Donec at sollicitudin purus, suscipit tempus augue.
-                Sed imperdiet volutpat sapien at hendrerit. Mauris egestas ex a quam tincidunt gravida. Quisque interdum
-                tempor lacinia. Nulla eget varius purus. Integer non sollicitudin dui. Phasellus sem turpis, maximus in auctor
-                vulputate, porta id nunc.</p>
+            <h1>Average Distance Traveled</h1>
+            <p>Using Google Maps API's, the total distance traveled in one-way trips amounted to over 130690.67 miles. The Distance Matrix API inputs 
+                start/end coordinates and calculates various heuristics on the path a client would take. This includes an estimate on the amount of
+                time the path requires which traffic conditions, the total distance, and directions. Since round-trips have the same start/end station, it was
+                important to understand how people bike in urban cities. A conclusive study in Copenhagen determined that the average biking speed was 9.6 mph.
+                trips. we get 9.6 mph * 11614 total hours on round trips amounts to 111492.959 miles. Note this data excludes trips where the bike was not returned.
+                In other words, the destination station ID was either 3000 or the destination longitude/latuitude was NaN. Otherwise our data would be dramatically
+                skewed to the right.
+            </p>
         </div>
         <div class="col-3">
-            <h1>First Section Col2</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque imperdiet est id leo facilisis, quis egestas
-                erat vehicula. Aenean nec facilisis leo, et tristique lorem. Aliquam porttitor, elit ac ornare lacinia, sapien
-                augue sagittis dolor, tempor ultricies lorem arcu et ante. Nulla facilisi. Praesent facilisis lacus at blandit
-                maximus. Ut at libero nisi. Cras eu augue tellus. Nam pretium eget nisi non viverra. Maecenas eget tincidunt
-                nibh, vitae interdum dolor.</p>
+            <h1>Popular Start/End Stations</h1>
+            <p>From looking at the bar chart of total bike usage per hour, we can see that the most frequently used hour is 6 pm. This
+                is during rush hour in L.A. It makes sense that total demand for a bike increases dramatically during that time period
+                because people are trying to get home as fast as possible. If we assume that most monthly commuters are monthly pass
+                holders, we can see a different bar chart. There are spikes at 9 am, 1 pm and 6 pm. This can be account for in mornign
+                rush hour, lunch, and rush hour back home. In the morning, it would be smart to allocate many bikes in the station
+                (34.063179, -118.24588); during lunch break, it would be smart to allocate many bikes in the station (34.04681, -118.24353);
+                finnaly, during rush hour post work it would be smart to allocate many bikes to the station (34.04855, -118.25904799999999).</p>
         </div>
         <div class="col-3">
-            <h1>First Section Col3</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ac nibh dolor. Cras rutrum molestie ligula posuere
-                hendrerit. Donec luctus vitae elit in gravida. Duis in viverra nunc. Nunc et metus blandit, blandit quam
-                in, laoreet mi. In vitae mauris sit amet tellus dictum rhoncus malesuada non arcu. Ut lacus lacus, dignissim
-                at commodo id, dapibus sed felis. Cras in nunc id est lobortis euismod. Sed egestas nulla et augue sagittis
-                lacinia. Quisque finibus bibendum risus, vitae accumsan ante mollis ac. Aliquam fermentum, mauris eu gravida
-                dictum, tortor r    isus finibus nibh, in tincidunt velit tortor vehicula mi.</p>
+            <h1>Commuters</h1>
+            <p>Considering that monthy pass holders are very likely to be commuters, we can take the average of the daily bike usage monday
+            through friday for this time series.</p>
         </div>
     </div>
     <div class="parallax p3">
         <hgroup>
-            <h1>Well</h1>
-            <h2>This is some bold info!</h2>
+            <h1>Metro Bike Share</h1>
+            <h2>LA's Bike Share (https://bikeshare.metro.net)</h2>
         </hgroup>
+    </div>
+    <div class="row">
+        <div class="col-3">
+            <h1>Net Change of Bikes Over the Course of a Day</h1>
+            <p>From looking at the bar chart of total bike usage per hour, we can see that the most frequently used hour is 6 pm.
+                This is during rush hour in L.A. It makes sense that total demand for a bike increases dramatically during that
+                time period because people are trying to get home as fast as possible. If we assume that most monthly commuters
+                are monthly pass holders, we can see a different bar chart. There are spikes at 9 am, 1 pm and 6 pm. This can
+                be account for in mornign rush hour, lunch, and rush hour back home. In the morning, it would be smart to allocate
+                many bikes in the station (34.063179, -118.24588); during lunch break, it would be smart to allocate many bikes
+                in the station (34.04681, -118.24353); finnaly, during rush hour post work it would be smart to allocate many
+                bikes to the station (34.04855, -118.25904799999999).</p>
+        </div>
+        <div class="col-3">
+            <h1>Breakdown of Trip Route Category-Passholder Type Combinations</h1>
+            <p>From this we can see that monthly users are much more likely to take one way trips (77099.0 vs. 3765.0). This only
+                confirms that monthly users are likely commuters. Walk up users still use one way trips far more than round trips
+                (32322.0 vs. 8446.0). Flex users are also more likely to use one way trips with 8981.0 vs. 483.0. Finally, staff
+                are also more likely to be one way users with 286.0 vs. 80.0.</p>
+        </div>
+        <div class="col-3">
+            <h1>Breakdown of Trip Route Category-Passholder Type Combinations</h1>
+            <p>From this we can see that monthly users are much more likely to take one way trips (77099.0 vs. 3765.0). This only confirms
+                that monthly users are likely commuters. Walk up users still use one way trips far more than round trips (32322.0
+                vs. 8446.0). Flex users are also more likely to use one way trips with 8981.0 vs. 483.0. Finally, staff are also
+                more likely to be one way users with 286.0 vs. 80.0.</p>
+        </div>
     </div>
     <footer>
         <div class="row" id="section-3">
@@ -99,5 +129,4 @@
         </div>
     </footer>
 </body>
-
 </html>
