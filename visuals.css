@@ -1,5 +1,5 @@
 body {
-  background-color: #dfdfdf;
+  background-color: #ffffff;
   color: #313131;
   padding: 0;
   margin: 0;
@@ -7,7 +7,7 @@ body {
   transform-style: preserve-3d;
   height: 100%;
   overflow-x: hidden;
-  font-family: 'Roboto';
+  font-family: "Courier New";
 }
 .left-underline {
   display: inline-block;
@@ -101,8 +101,9 @@ li.active > a.nav-button {
   color: #fff;
 }
 .parallax.p2 {
-  background: url(http://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-126549.jpg) no-repeat fixed 50% 0;
-  background-size: cover;
+  background: url(https://github.com/davidterpay/davidterpay.github.io/blob/master/data.png?raw=true) no-repeat fixed 100% 0;
+  background-size: 700px 450px;
+  background-position: center;
   color: #fff;
 }
 .parallax.p3 {
