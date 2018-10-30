@@ -19,7 +19,7 @@
                 <a href="#section-2" class="left-underline nav-button" data-scroll>Data</a>
             </li>
             <li class="nav-item active">
-                <a href="#section-1" class="left-underline nav-button" data-scroll>Home</a>
+                <a href="#section-1" class="left-underline nav-button" data-scroll>Head</a>
             </li>
         </ul>
     </div>
@@ -31,101 +31,163 @@
     <div class="row">
         <div class="col-1">
             <h1>One Way Trip to the Moon</h1>
-            <p>Using both one way and round trips from our data, bikers rode nearly 250000 miles. Enough milage to travel the globe
-            10 times. Enough milage to have 110 people bike the Tour de France. 
-            </p>
-            <p>Since one way trips are more accurate (don't require an estimate), this route trip category had enough milage to travel the
-            globe nearly 5 and a half times.
+            <p>Using both one-way and round trips from the data, bikers rode nearly 250,000 miles. Enough milage to circle the
+                globe 10 times. Enough milage to have 110 people bike the Tour de France. Enough milage to bike 3/4's of
+                the total miles of roads in the state of California.
             </p>
         </div>
         <div class="col-1">
             <h1>$800,000 dollars Saved</h1>
-            <p>Average gas prices in L.A during this time period were 3.29 (FRED data), this means that bikers saved nearly 800,000 dollars. This cost excludes
-                the amount of time saved and the cost of staying in one of the world's most notorious traffic cities.
-            </p>
-            <p>
-                 If only one way trips are considered, bikers saved nearly 430,000 dollars.
+            <p>According to FRED data, The average gas price in L.A during this stretch of time was $3.29. According to the
+                EPA, the average MPG of a car in the U.S is 24.7 MPG. This cost excludes the implicit cost of commuting via
+                bike instead of car or transit. Considering that Los Angeles is notoriously known as one of the most traffic
+                condensed cities, the opportunity cost of riding a bike rather than commuting on transit or car is very likely
+                to be far lower. Therefore, if we were to estimate the true economic cost, bike share users would have saved
+                millions.
             </p>
         </div>
         <div class="col-1">
             <h1>196,100 Pounds of CO2 Emmision Reduced</h1>
-            <p>Burning one gallon of gas creates 20 pounds of carbon dioxide. According to the EPA, average MPG of a car in the U.S is 24.7
-            MPG. This means that bikers prevented over 196,100 pounds of CO2 emmision. While biking helped reduce pollution, biking more
-            also helped users get a good workout. If we assume that biking on average consumes around 38 calories, clients burned 9,202,978
-            total calories.  </p>
+            <p>According to the EPA, burning one gallon of gas creates 20 pounds of carbon dioxide. As mentioned before, the
+                average MPG of a car in the U.S is 24.7 MPG. This means that bikers prevented over 196,100 pounds of CO2
+                emmisions. While biking reduced pollution, biking alo helped clients get a good workout. If we assume that biking
+                for one mile on average consumes 38 calories, all clients combined burned a total of 9,202,978 calories.
+            </p>
         </div>
     </div>
     <div class="parallax p2" id="section-2">
-    </div>
-    <div class="row">
-        <div class="col-2">
-            <h1>Average Distance Traveled</h1>
-            <p>The aggregate average distance traveled is 1.82 miles on 131472 total trips; average distance on one way
-            trips is 1.10 miles in 118690 trips; average distance on round trips is 8.7 miles in 12782 trips.
-            </p>
-            <p>To calculate the distance traveled in one way trips, the Distance Matrix API from Google Map's was used. This API estimates
-            the amount of time the path requires, the total distance, and directions. The distance traveled in one way trips
-            amounted to 130690.67 miles. Since round-trips have the same start/end station, it is important to understand how people
-            bike in urban cities. A conclusive study in Copenhagen determined that the average biking speed in a urban city was 9.6 mph.
-            From this estimate, 9.6 mph * 11614 total hours on round trips amounts to 111492.959 miles.
-            </p>
-        </div>
-        <div class="col-2">
-            <h1>Popular Start/End Stations</h1>
-            <p>From looking at the bar chart of total bike usage per hour, we can see that the most frequently used hour is 6 pm. This
-                is during rush hour in L.A. It makes sense that total demand for a bike increases dramatically during that time period
-                because people are trying to get home as fast as possible. If we assume that most monthly commuters are monthly pass
-                holders, we can see a different bar chart. There are spikes at 9 am, 1 pm and 6 pm. This can be account for in mornign
-                rush hour, lunch, and rush hour back home. In the morning, it would be smart to allocate many bikes in the station
-                (34.063179, -118.24588); during lunch break, it would be smart to allocate many bikes in the station (34.04681, -118.24353);
-                finnaly, during rush hour post work it would be smart to allocate many bikes to the station (34.04855, -118.25904799999999).</p>
-        </div>
-        <div class="col-2">
-            <h1>Commuters</h1>
-            <p>Considering that monthy pass holders are very likely to be commuters, we can take the average of the daily bike usage monday
-            through friday for this time series.</p>
-        </div>
-    </div>
-    <div class="parallax p3">
         <hgroup>
             <h1>Metro Bike Share</h1>
             <h2>LA's Bike Share (https://bikeshare.metro.net)</h2>
         </hgroup>
     </div>
     <div class="row">
+        <div class="col-2">
+            <h1>Popular Starting Stations</h1>
+            <p>
+                We can seperate each day into three segments - morning, lunch, and rush hour - and determine the most popular start and end
+                locations.
+            </p>
+            <p>
+                The most popular starting station in the mornings is at 668 N Figueroa St, Los Angeles, CA (34.063179, -118.24588) right
+                outside of Chinatown. This bike station is known as Figueroa & Cesar Chavez.
+            </p>
+
+            <p>
+                During the conventional lunch break (12 pm - 2 pm), it would be smart to allocate many bikes in the station 350 E Third Street,
+                Los Angeles, CA 90013 (34.04681, -118.24353). This station is called 3rd & San Pedro.
+            </p>
+
+            <p>
+                Finally, during rush hour post work it would be smart to allocate many bikes to the station at 723 S Flower Street, Los Angeles,
+                CA 90017 (34.04855, -118.25904799999999). This station is called 7th & Flower.
+            </p>
+        </div>
+        <div class="col-2">
+            <h1>Popular Ending Stations</h1>
+            <p>
+                If we follow the same format as finding the most popular starting stations we get the following.
+            </p>
+            <p>
+                The most popular ending station in the mornings is at 723 S Flower Street, Los Angeles, CA 90017 (34.063179, -118.25904799999999).
+                This station is called 7th & Flower. This is the same location as the most popular starting location in the
+                evening. This implies that several people commute to here in the mornings and from here in the evenings.
+            </p>
+
+            <p>
+                During the conventional lunch break (12 pm - 2 pm), the most popular ending statoin at 350 E Third Street, Los Angeles, CA
+                90013 (34.04681, -118.24353). This station is called 3rd & San Pedro. This is the same location as the most
+                popular starting location for lunch time. This means that several people take advantage to bike from their
+                work, which is neear 3rd and San Pedro, to eat somewhere and then return back.
+            </p>
+
+            <p>
+                Finally, during rush hour (post work) the most popular ending station is at 532 W Olive Street (34.04855, -118.25904799999999).
+                This station is called Olive & 5th.
+            </p>
+        </div>
+        <div class="col-2">
+            <h1>Average Distance Traveled</h1>
+            <p>The aggregate average distance traveled is 1.82 miles on 131472 total trips; average distance on one way trips
+                is 1.10 miles in 118690 trips; average distance on round trips is 8.7 miles in 12782 trips.
+            </p>
+            <p>To calculate the distance traveled in one way trips, the Distance Matrix API from Google Map's was used. This
+                API estimates the amount of time the path requires, the total distance, and directions. The distance traveled
+                in one way trips amounted to 130690.67 miles. Since round-trips have the same start/end station, it is important
+                to understand how people bike in urban cities. A conclusive study in Copenhagen determined that the average
+                biking speed in a urban city was 9.6 mph. From this estimate, 9.6 mph * 11614 total hours on round trips
+                amounts to 111492.959 miles.
+            </p>
+        </div>
+    </div>
+    <div class="parallax p3">
+    </div>
+    <div class="row">
+        <div class="col-6">
+            <h1>Commuters</h1>
+            <p>The graph Bike Share Usage Since 07/07/2016 displays the total number of bikes used by each type of pass holder. T signifies
+            total, F represents flex pass holders, M represents monthly pass holders, W represents walk ups, and S represents Staff.
+            From this graph we can deduce monthly pass holders and walk ups make up the biggest demographic group in total bike share
+            users and in total cyclical demand of bikes. As the number of bikes used by monthly users spikes, the number of walk ups
+            jumps down and vice versa. This can further lead to the conclusion that there is an inverse relationship between the two
+            groups. After further analyizing the data, it is clear that monthly users are commuters because their total usage is highest
+            during the work week (Monday - Friday). On the other hand, walk ups are much more frequent during the weekends meaning that
+            walk ups are very likely recreational users.
+            </p>
+            <p>
+                 According to the boxplot of Bike Share Usage among Monthly Pass Holders, the median of total daily bike usage by monthly
+                users is 300 bikes. If we deduct the fact that these pass holders have to commute to and from work, we get a total of around
+                150 clients. If we include the total amount of flex pass holders and staff, we can total our number of daily commuters to
+                around 180 clients.
+            </p>
+        </div>
         <div class="col-3">
             <h1>Net Change of Bikes Over the Course of a Day</h1>
-            <p>From looking at the bar chart of total bike usage per hour, we can see that the most frequently used hour is 6 pm.
-                This is during rush hour in L.A. It makes sense that total demand for a bike increases dramatically during that
-                time period because people are trying to get home as fast as possible. If we assume that most monthly commuters
-                are monthly pass holders, we can see a different bar chart. There are spikes at 9 am, 1 pm and 6 pm. This can
-                be account for in mornign rush hour, lunch, and rush hour back home. In the morning, it would be smart to allocate
-                many bikes in the station (34.063179, -118.24588); during lunch break, it would be smart to allocate many bikes
-                in the station (34.04681, -118.24353); finnaly, during rush hour post work it would be smart to allocate many
-                bikes to the station (34.04855, -118.25904799999999).</p>
+            <p>According to the bar chart of Total Bike Usage Per Hour, the most frequently used hour is 6 pm. This is during rush hour
+            in L.A. Total demand for a bike increases dramatically during that time period because people are trying to get home as fast
+            as possible. If we assume that most commuters are monthly pass holders, a different bar chart appears. According to Bike
+            Usage by Hour (Monthly Users), there are spikes at 9 am, 1 pm and 6 pm. This can be account for in morning rush hour, lunch,
+            and evening rush hour. As mentioned in the paragraph describing popular start/end stations, in order to allocate bikes efficiently
+            it is important to understand the trends seen during the weekday. In short, in order to maximize allocative efficiency, bikes
+            should be placed in the most popular starting stations for each segement of the day - morning, lunch, and evening rush hour.
+            As mentioned before, these stations would be on Figueroa & Cesar Chavez in the morning, 3rd & San Pedro during lunch, and
+            7th & Flower for the evening.
+        </p>
         </div>
         <div class="col-3">
-            <h1>Breakdown of Trip Route Category-Passholder Type Combinations</h1>
-            <p>From this we can see that monthly users are much more likely to take one way trips (77099.0 vs. 3765.0). This only
-                confirms that monthly users are likely commuters. Walk up users still use one way trips far more than round trips
-                (32322.0 vs. 8446.0). Flex users are also more likely to use one way trips with 8981.0 vs. 483.0. Finally, staff
-                are also more likely to be one way users with 286.0 vs. 80.0.</p>
+            <h1>Trip Route Category vs. Passholder Type Combinations</h1>
+            <p>From this we can see that monthly users are much more likely to take one way trips (77099.0 vs. 3765.0). This
+                only confirms that monthly users are likely commuters. Walk up users still use one way trips far more than
+                round trips (32322.0 vs. 8446.0). Flex users are also more likely to use one way trips with 8981.0 vs. 483.0.
+                Finally, staff are also more likely to be one way users with 286.0 vs. 80.0.</p>
         </div>
-        <div class="col-3">
-            <h1>Breakdown of Trip Route Category-Passholder Type Combinations</h1>
-            <p>From this we can see that monthly users are much more likely to take one way trips (77099.0 vs. 3765.0). This only confirms
-                that monthly users are likely commuters. Walk up users still use one way trips far more than round trips (32322.0
-                vs. 8446.0). Flex users are also more likely to use one way trips with 8981.0 vs. 483.0. Finally, staff are also
-                more likely to be one way users with 286.0 vs. 80.0.</p>
+    </div>
+    <div class="parallax p4">
+    </div>
+    <div class="row">
+        <div class="col-4">
+            <h1>Seasonality</h1>
+            <p>The most consistent and cyclical data comes from monthly clients and walk up clients. This can be in part explained by the
+            fact that monthly users are more than likely to be commuters. The cyclicality can be explained by the work week. During the
+            days monday-friday, many people are using bikes but this demand drops significantly during the weekends. On the other end
+            of things, we can see that when the weekends come by, the number of walk-ups increases substaintially. This implies that
+            monthly users are commuters (as mentioned), and walk-ups are people primarly recreational users. There are two very interesting
+            spikes in usage from the our time series data. These dates are 2016-10-16 with 1477 bikes used and 2017-01-21 with 746. 2016-10-16
+            was national world food day and the L.A Dodgers were playing the Chicago Cubs in the second game of the NLCS; on 2017-01-21
+            there was a women's march in Los Angles. As the weather got cooler in L.A, demand for bikes declined. Consumer tastes are
+            driven in line with the period of the season (which is related to the time of year). In addition, as winter break came along
+            - weeks between December 15 and January 15 - demand for bikes is at its lowest. This logistically makes sense because less
+            people are coming to work and are vacationing. The peak for our data set was in the months of July - August. Factors that
+            can explain why this is peak include the weather during the summer (much warmer) and
+            </p>
         </div>
     </div>
     <footer>
         <div class="row" id="section-3">
-            <div class="col-4">
+            <div class="col-5">
                 <p>
-                About me: I am a Sophomore at Northwestern University studying Computer Science and Economics. I am currently enriching my
-                understanding of databases, software design and scalability, data structures, cloud computing, quantitative trading and/or
-                financial engineering. 
+                     I am a Sophomore at Northwestern University studying Computer Science and Economics. I am currently enriching my understanding
+                    of databases, software design and scalability, data structures, cloud computing, quantitative trading and/or financial engineering.
                 </p>
             </div>
         </div>
@@ -136,4 +198,5 @@
         </div>
     </footer>
 </body>
+
 </html>

@@ -101,14 +101,20 @@ li.active > a.nav-button {
   color: #fff;
 }
 .parallax.p2 {
+  background: url(https://11ka1d3b35pv1aah0c3m9ced-wpengine.netdna-ssl.com/wp-content/uploads/2018/08/SE_180424_5862.jpg) no-repeat fixed 70% 0;
+  background-size: cover;
+  color: #fff;
+}
+.parallax.p3 {
   background: url(https://github.com/davidterpay/davidterpay.github.io/blob/master/aggdata.png?raw=true) no-repeat fixed 100% 0;
   background-size: 1300px 900px;
   background-position: center;
   color: #fff;
 }
-.parallax.p3 {
-  background: url(https://11ka1d3b35pv1aah0c3m9ced-wpengine.netdna-ssl.com/wp-content/uploads/2018/08/SE_180424_5862.jpg) no-repeat fixed 70% 0;
-  background-size: cover;
+.parallax.p4 {
+  background: url(https://github.com/davidterpay/davidterpay.github.io/blob/master/aggdata.png?raw=true) no-repeat fixed 100% 0;
+  background-size: 1300px 900px;
+  background-position: center;
   color: #fff;
 }
 .parallax-text {
@@ -153,8 +159,9 @@ hgroup{
   display: table;
   clear: both;
 }
+/* CSS on all of the rows */
 .row > .col-1 {
-  width: 30%;
+  width: 33%;
   height: 50%;
   box-sizing: border-box;
   float: left;
@@ -163,15 +170,15 @@ hgroup{
 }
 .row > .col-2 {
   width: 33%;
-  height: 70%;
+  height: 85%;
   box-sizing: border-box;
   float: left;
   padding-left: 5px;
   padding-right: 5px;
 }
 .row > .col-3 {
-  width: 33%;
-  height: 70%;
+  width: 50%;
+  height: 55%;
   box-sizing: border-box;
   float: left;
   padding-left: 5px;
@@ -179,7 +186,23 @@ hgroup{
 }
 .row > .col-4 {
   width: fit-content;
+  height: 50%;
+  box-sizing: border-box;
+  float: left;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.row > .col-5 {
+  width: fit-content;
   height: 10%;
+  box-sizing: border-box;
+  float: left;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.row > .col-6 {
+  width: fit-content;
+  height: 38%;
   box-sizing: border-box;
   float: left;
   padding-left: 5px;
