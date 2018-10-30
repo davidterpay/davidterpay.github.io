@@ -74,6 +74,7 @@ body {
   overflow-x: hidden;
   font-family: "Courier New";
 }
+/* Everything to do with the header and top portion bar */
 .left-underline {
   display: inline-block;
   vertical-align: middle;
@@ -177,7 +178,7 @@ li.active > a.nav-button {
 }
 .row > .col-2 {
   width: 30%;
-  height: 85%;
+  height: 95%;
   box-sizing: border-box;
   float: left;
   padding-left: 5px;
@@ -185,7 +186,7 @@ li.active > a.nav-button {
 }
 .row > .col-3 {
   width: 50%;
-  height: 55%;
+  height: 60%;
   box-sizing: border-box;
   float: left;
   padding-left: 5px;
@@ -193,7 +194,7 @@ li.active > a.nav-button {
 }
 .row > .col-4 {
   width: fit-content;
-  height: 40%;
+  height: 45%;
   box-sizing: border-box;
   float: left;
   padding-left: 5px;
