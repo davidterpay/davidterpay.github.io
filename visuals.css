@@ -1,3 +1,68 @@
+/* CSS on everything related to parallaxing and everything within the parrallax */
+.parallax {
+  height: 70vh;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+.parallax.p1 {
+  background: url(https://www.evusa.com/uploads/a2/7428079.28.jpg) no-repeat fixed 50% 0;
+  background-position: center bottom;
+  background-size: cover;
+  color: #fff;
+}
+.parallax.p2 {
+  background: url(https://11ka1d3b35pv1aah0c3m9ced-wpengine.netdna-ssl.com/wp-content/uploads/2018/08/SE_180424_5862.jpg) no-repeat fixed 70% 0;
+  background-size: cover;
+  color: #fff;
+}
+.parallax.p3 {
+  background: url(https://github.com/davidterpay/davidterpay.github.io/blob/master/aggdata.png?raw=true) no-repeat fixed 100% 0;
+  background-size: 1300px 900px;
+  background-position: center;
+  color: #fff;
+}
+.parallax.p4 {
+  background: url(https://web.tplgis.org/wp-content/uploads/2018/01/Echo_Park_Lake_with_Downtown_Los_Angeles_Skyline.jpg) no-repeat fixed 100% 0;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+}
+.parallax.p5 {
+  background: url(https://github.com/davidterpay/davidterpay.github.io/blob/master/data.png?raw=true) no-repeat fixed 100% 0;
+  background-size: 800px 500px;
+  background-position: center;
+  color: #fff;
+}
+.parallax-text {
+  width: 24em;
+  position: fixed;
+  top: 20%;
+  left: 50%;
+  border: .5em solid #fff;
+  margin-left: -10%;
+  padding: 2em 0;
+  text-align: center;
+  z-index: 999;
+}
+.parallax > div.blur-image {
+  position: relative;
+  width: 100%;
+  height: 100%;
+} 
+hgroup{
+  display: inline-block;
+  text-align: center;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  color: #fff;
+  border: 5px solid #fff;
+  padding: .5em 3em;
+  background-color: rgba(0,0,0,.2);
+  z-index: 2;
+}
 body {
   background-color: #ffffff;
   color: #313131;
@@ -88,71 +153,6 @@ li.active > a.nav-button {
   float: left;
   cursor: default;
 }
-/* CSS on everything related to parallaxing and everything within the parrallax */
-.parallax {
-  height: 70vh;
-  overflow: hidden;
-  margin: 0;
-  padding: 0;
-}
-.parallax.p1 {
-  background: url(https://www.evusa.com/uploads/a2/7428079.28.jpg) no-repeat fixed 50% 0;
-  background-position: center bottom;
-  background-size: cover;
-  color: #fff;
-}
-.parallax.p2 {
-  background: url(https://11ka1d3b35pv1aah0c3m9ced-wpengine.netdna-ssl.com/wp-content/uploads/2018/08/SE_180424_5862.jpg) no-repeat fixed 70% 0;
-  background-size: cover;
-  color: #fff;
-}
-.parallax.p3 {
-  background: url(https://github.com/davidterpay/davidterpay.github.io/blob/master/aggdata.png?raw=true) no-repeat fixed 100% 0;
-  background-size: 1300px 900px;
-  background-position: center;
-  color: #fff;
-}
-.parallax.p4 {
-  background: url(https://web.tplgis.org/wp-content/uploads/2018/01/Echo_Park_Lake_with_Downtown_Los_Angeles_Skyline.jpg) no-repeat fixed 100% 0;
-  background-size: cover;
-  background-position: center;
-  color: #fff;
-}
-.parallax.p5 {
-  background: url(https://github.com/davidterpay/davidterpay.github.io/blob/master/data.png?raw=true) no-repeat fixed 100% 0;
-  background-size: 800px 500px;
-  background-position: center;
-  color: #fff;
-}
-.parallax-text {
-  width: 24em;
-  position: fixed;
-  top: 20%;
-  left: 50%;
-  border: .5em solid #fff;
-  margin-left: -10%;
-  padding: 2em 0;
-  text-align: center;
-  z-index: 999;
-}
-.parallax > div.blur-image {
-  position: relative;
-  width: 100%;
-  height: 100%;
-} 
-hgroup{
-  display: inline-block;
-  text-align: center;
-  position: relative;
-  top: 50%;
-  left: 50%;
-  transform: translateX(-50%) translateY(-50%);
-  color: #fff;
-  border: 5px solid #fff;
-  padding: .5em 3em;
-  background-color: rgba(0,0,0,.2);
-  z-index: 2;
-}
 .row {
   width: 80%;
   padding-left: 10%;
@@ -168,15 +168,15 @@ hgroup{
 }
 /* CSS on all of the rows */
 .row > .col-1 {
-  width: 33%;
-  height: 50%;
+  width: 30%;
+  height: 55%;
   box-sizing: border-box;
   float: left;
   padding-left: 5px;
   padding-right: 5px;
 }
 .row > .col-2 {
-  width: 33%;
+  width: 30%;
   height: 85%;
   box-sizing: border-box;
   float: left;
