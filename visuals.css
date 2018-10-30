@@ -193,7 +193,7 @@ hgroup{
 }
 .row > .col-4 {
   width: fit-content;
-  height: 50%;
+  height: 40%;
   box-sizing: border-box;
   float: left;
   padding-left: 5px;
