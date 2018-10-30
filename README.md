@@ -2,7 +2,7 @@
 Building a web app that analyzes bike share data
 
 This web app will solve questions such as 
-1. Data Visuals: Display or graph 3 metrics or trends from the data set that are interesting to you.
+1. Displaying or graphing 3 metrics or trends from the data set that are interesting to you.
 2. Which start/stop stations are most popular?
 3. What is the average distance traveled?
 4. How many riders include bike sharing as a regular part of their commute?
