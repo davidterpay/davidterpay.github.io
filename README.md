@@ -12,5 +12,10 @@ This web app will solve questions such as
 
 To see the web app in action, open a new tab and type in davidterpay.github.io
 
-This web app is my submission for the Capital One Summit Challange.
+This web app is my submission for the Capital One Summit Challenge.
 
+## Attached files
+
+graph.py.ipynb contains all of the source code for cleaning/pruning data as well as data visualizations, statistics, and conclusions to questions seen above.
+
+index.html, visuals.css, and scripts.js all contain source code for the website. This website is not completely mobile friendly (everything you see on a desktop version might not be what you see on mobile). These files use pngs that came from graphs create in graph.py.ipynb.These pngs include aggdata.png, monthlyusers.png, totalusers.png, data.png, and dailyusage.png
