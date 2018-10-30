@@ -88,6 +88,7 @@ li.active > a.nav-button {
   float: left;
   cursor: default;
 }
+/* CSS on everything related to parallaxing and everything within the parrallax */
 .parallax {
   height: 70vh;
   overflow: hidden;
@@ -112,8 +113,14 @@ li.active > a.nav-button {
   color: #fff;
 }
 .parallax.p4 {
-  background: url(https://github.com/davidterpay/davidterpay.github.io/blob/master/aggdata.png?raw=true) no-repeat fixed 100% 0;
-  background-size: 1300px 900px;
+  background: url(https://web.tplgis.org/wp-content/uploads/2018/01/Echo_Park_Lake_with_Downtown_Los_Angeles_Skyline.jpg) no-repeat fixed 100% 0;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+}
+.parallax.p5 {
+  background: url(https://github.com/davidterpay/davidterpay.github.io/blob/master/data.png?raw=true) no-repeat fixed 100% 0;
+  background-size: 800px 500px;
   background-position: center;
   color: #fff;
 }
@@ -208,6 +215,7 @@ hgroup{
   padding-left: 5px;
   padding-right: 5px;
 }
+/* CSS on footer content */
 footer {
   width: 100%;
   padding-top: 10px;

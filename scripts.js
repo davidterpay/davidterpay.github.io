@@ -12,6 +12,9 @@ function parallax() {
     $('.p4').css({
         'background-position': '70% ' + (-scrollPos / 32) + "px"
     });
+    $('.p5').css({
+        'background-position': '70% ' + (-scrollPos / 32) + "px"
+    });
     $('.parallax-text').css({
         'margin-top': (scrollPos / 2) + "px",
         'opacity': 1 - (scrollPos / 230)
