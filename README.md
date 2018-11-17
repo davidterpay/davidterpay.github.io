@@ -12,7 +12,7 @@ This web app will solve questions such as
 
 To see the web app in action, open a new tab and type in davidterpay.github.io
 
-This web app is my submission for the Capital One Summit Challenge.
+This web app is my winning submission to the Capital One Summit Challenge.
 
 ## Attached files
 
